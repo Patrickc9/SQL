@@ -1,4 +1,4 @@
-CREATE TABLE Store (id INTEGER PRIMARY KEY, Name TEXT, Stock INTEGER, Brand TEXT,  price INTEGER);
+CREATE TABLE Store (id INTEGER PRIMARY KEY, Name TEXT, Stock INTEGER, Brand TEXT,  Price INTEGER);
 INSERT INTO Store VALUES (1, "Shorts", 12, "Under armour", 25),
 (2,"Runners", 10, "Nike", 100), 
 (3, "T-Shirt", 15, "Adidas", 20), 
