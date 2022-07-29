@@ -1,0 +1,31 @@
+CREATE TABLE Store (id INTEGER PRIMARY KEY, Name TEXT, Stock INTEGER, Brand TEXT,  price INTEGER);
+INSERT INTO Store VALUES (1, "Shorts", 12, "Under armour", 25),
+(2,"Runners", 10, "Nike", 100), 
+(3, "T-Shirt", 15, "Adidas", 20), 
+(4, "Socks", 50, "Dunlop", 5), 
+(5, "Cap", 10, " Lululemon", 35),
+(6, "Vest", 12, "GymShark", 10),
+(7, "Jumper", 5, "Billabong", 50),
+(8, "Underwear", 26, "Calvin Klein", 30),
+(9, "Runners", 3, "Asics", 120),
+(10, "T,Shirt", 17, "Nike", 25),
+(11, "Jumper", 9, "Adidas", 40),
+(12, "Jacket", 1, "Columbia", 90),
+(13, "Sandals", 13, "Birkenstock", 70),
+(14, "Beanie", 11, "Quicksilver", 15),
+(15, "Jacket", 14, "Arcteryx", 350);
+
+--display the database ordered by Stock. 
+SELECT * FROM store
+ORDER BY Stock desc; 
+
+--what is the avg price of Nike Items? 
+SELECT AVG(price) "avg Nike item Price"
+FROM store
+where Brand='Nike'; 
+
+--what are the most 5 expensive items? 
+SELECT Name, Price, Brand
+FROM store
+ORDER BY Price desc
+limit 5;
